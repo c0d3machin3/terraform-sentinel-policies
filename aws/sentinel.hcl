@@ -16,12 +16,12 @@ module "aws-functions" {
 
 policy "check-ec2-environment-tag" {
   source = "./check-ec2-environment-tag.sentinel"
-  enforcement_level = "Hard Mandatory"
+  enforcement_level = "hard mandatory"
 }
 
 policy "enforce-mandatory-tags" {
   source = "./enforce-mandatory-tags.sentinel"
-  enforcement_level = "Hard Mandatory"
+  enforcement_level = "hard mandatory"
 }
 
 policy "protect-against-rds-instance-deletion" {
